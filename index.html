@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de proyectos desarrollados en clase">
+    <meta name="keywords" content="proyectos, HTML, CSS, desarrollo web">
+    <title>Inicio - Proyectos Edwin</title>
+    <style>
+        body {
+            font-family: "PT Sans", Avenir, system-ui, sans-serif;
+            margin: 20px;
+            text-align: justify;
+            background-color: rgba(32, 37, 44, 255);
+        }
+
+        p {
+            color: #e2e7db;
+            font-size: 19px;
+        }
+
+        nav {
+            background-color: #252b33;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+       
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li {
+            margin: 0 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #d96831;
+            font-size: 18px;
+            padding: 10px 15px;
+            display: block;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #d96831;
+            color: #252b33;
+            border-radius: 5px;
+        }
+
+        
+        .menu a:active {
+            background-color: #E78A4E;
+            color: white;
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+        }
+
+      
+        .menu-toggle {
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+            color: white;
+            background: none;
+            border: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Input para controlar el menú */
+        #menu-toggle {
+            display: none;
+        }
+
+    
+        @media screen and (max-width: 600px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                background-color: #252b33;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .menu li {
+                margin: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            
+            #menu-toggle:checked~.menu {
+                display: flex;
+            }
+        }
+
+        .contenedor {
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #e2e7db;
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #d96831;
+            margin-bottom: 60px;
+        }
+
+        h3 {
+            color: #E78A4E;
+            font-size: 25px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .lista li {
+            color: #FFFFFF;
+        }
+
+        .lista li::marker {
+            color: #CCCCCC;
+        }
+
+        a {
+            color: rgb(164, 222, 224);
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #252b33;
+            color: #e2e7db;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label for="menu-toggle" class="menu-toggle">☰</label>
+        <input type="checkbox" id="menu-toggle">
+        <ul class="menu">
+            <li><a href="HTML 2.1/practicaUno.html">Práctica 1</a></li>
+            <li><a href="HTML 2.2/practicaDos.html">Práctica 2</a></li>
+            <li><a href="HTML 2.3/practicaTres.html">Práctica 3</a></li>
+            <li><a href="HTML 2.4/archivos/practicaCuatro.html">Práctica 4</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+        <header>
+            <h1>Explora mis proyectos</h1>
+            <h2>Descubre el trabajo realizado en clase y mis avances en desarrollo web</h2>
+        </header>
+    </div>
+
+    <div>
+        <section>
+            <h3>Proyectos desarrollados</h3>
+            <p>A continuación, puedes acceder a los proyectos que he elaborado como parte de mi aprendizaje en HTML y
+                CSS:</p>
+            <ul class="lista">
+                <li><a href="HTML 2.1/practicaUno.html">Práctica 1</a> - Conceptos básicos de HTML</li>
+                <li><a href="HTML 2.2/practicaDos.html">Práctica 2</a> - Enlaces y estructuras</li>
+                <li><a href="HTML 2.3/practicaTres.html">Práctica 3</a> - Uso avanzado de estilos y multimedia</li>
+                <li><a href="HTML 2.4/archivos/practicaCuatro.html">Práctica 4</a> - Organización de Información con
+                    Tablas, Formularios y CSS Embebido</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+<footer>
+    <small>Derechos reservados</small>
+</footer>
+
+</html>

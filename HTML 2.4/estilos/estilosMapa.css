@@ -1,0 +1,124 @@
+body {
+    font-family: "PT Sans", Avenir, system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+nav {
+    border-bottom: 1px solid rgba(81, 80, 80, 0.2);
+    padding: 10px 0;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.principal {
+    background-color: #2a2a95;
+    color: aliceblue;
+    text-align: center;
+    width: 80%;
+    max-width: 1260px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal h1 {
+    font-size: 40px;
+    color: aliceblue;
+    margin: 0;
+}
+
+main {
+    background-color: rgb(234, 234, 234);
+    padding: 40px 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #2a2a95;
+    text-align: center;
+}
+
+.mapaInteractivo {
+    background-color: rgb(248, 248, 248);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mapaInteractivo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mapaInteractivo p {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.informacionRuta {
+    margin-top: 30px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.informacionRuta h3 {
+    font-size: 24px;
+    color: #2a2a95;
+    margin-bottom: 10px;
+}
+
+.informacionRuta ul {
+    font-size: 18px;
+    color: #555;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.informacionRuta li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2a2a95;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 1260px;
+    height: 100px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
